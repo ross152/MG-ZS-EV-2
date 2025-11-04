@@ -37,13 +37,13 @@
   "signals": [
     {"id": "ZSEV_HBAT_C", "path": "Battery", "fmt": { "len": 16, "max": 638.375, "min": -1000, "div": 40, "add": -1000, "unit": "milliamps" }, "name": "High voltage battery current"}
   ]},
-{ "hdr": "781", "rax": "789", "dbg": true, "cmd": {"22": "B046"}, "freq": 1,
+{ "hdr": "7E5", "rax": "789", "dbg": true, "cmd": {"22": "B046"}, "freq": 1,
   "signals": [
     {"id": "ZSEV_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 10, "unit": "percent" }, "name": "State of charge", "suggestedMetric": "stateOfCharge"}
   ]},
 { "hdr": "781", "rax": "789", "dbg": true, "cmd": {"22": "B048"}, "freq": 1,
   "signals": [
-    {"id": "ZSEV_IS_CHARGING", "path": "Battery", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "yesno" }, "name": "Is charging",         "suggestedMetric": "isCharging"},
+    {"id": "ZSEV_IS_CHARGING", "path": "Batteryp", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "yesno" }, "name": "Is charging",         "suggestedMetric": "isCharging"},
     {"id": "ZSEV_IS_DCFC",     "path": "Battery", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "yesno" }, "name": "Is DC fast charging"}
   ]},
 { "hdr": "781", "rax": "789", "dbg": true, "cmd": {"22": "B056"}, "freq": 60, "filter": { "to": 2021 },
